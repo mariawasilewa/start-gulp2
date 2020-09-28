@@ -1,0 +1,76 @@
+
+
+.main-section {
+    @media only screen and (min-width: 768px) {
+        display: flex;
+    }
+    &-bg-image {
+       background-image: url('https://jolly-kalam-23776e.netlify.app/restaurantwebsite/images/taco.jpg'); 
+       min-height: 400px;
+       background-size: cover;
+       background-position: bottom right;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       padding: 20px;
+       margin-bottom: 20px;
+
+       @media only screen and (min-width: 768px) {
+          flex-basis: 60%;
+          margin-right: 10px;
+          align-items: flex-start;
+        }
+    }
+
+    &-price {
+
+        @media only screen and (min-width: 600px) {
+            display: flex;
+            margin: 0 -10px;
+        }
+
+        @media only screen and (min-width: 768px) {
+            flex-direction: column;
+            flex: 1;
+        }
+    }
+
+    h1, h2 {
+        color: #000;
+        margin: 0;
+        background-color: orange;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .box-price {
+        background-color: orange;
+        text-align: center;
+
+
+        span {
+            font-size: 60px;
+            font-weight: 100;
+        }
+
+        @media only screen and (min-width: 600px) {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        @media only screen and (min-width: 768px) {
+            height: 50%;
+        }
+    }
+
+    .box-price-first {
+        @media only screen and (min-width: 768px) {
+            margin-bottom: 10px;
+        }
+    }
+}
